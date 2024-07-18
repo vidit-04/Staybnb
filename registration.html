@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb Login</title>
+    <link rel="shortcut icon" href="images/faviconpng.png" type="image/png">
+    <link rel="stylesheet" href="house3.css">
+    <script src="https://kit.fontawesome.com/9c1719b004.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            display: flex;
+            margin: 4% 20%;
+            /* background-color: aliceblue; */
+            height: 70vh;
+            width: 60vw;
+            padding: 0;
+            border: 1px solid white;
+            border-radius: 5px;
+            box-shadow: 0 0px 80px rgba(0, 0, 0, 0.1);
+        }
+        .left{
+            width: 64.8%;
+        }
+        .main{
+            margin: 5% 10%;
+        }
+        .main p{
+            padding-top: 10px;
+            color: #555555;
+        }
+        .formInputs{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+        .formInputs input,
+        .formInputs button{
+            width: 140%; /* Adjusted the width */
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #555555;
+            border-radius: 5px;
+        }
+        .formInputs button{
+            border: none;
+            background-color: #555555;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .formInputs a{
+            color: #555555;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        #myForm input, #myForm span,#myForm button{
+            width: 140%; /* Adjusted the width */
+            margin-left: -20%;
+        }
+        .right{
+            background-image: url(image/bg_1.jpg);
+            background-size: contain;
+            width: 35.2%; 
+        }
+        .divider {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #cccccc;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+        }
+        .divider span {
+            background: #ffff;
+            padding: 0 10px;
+            color: #555555;
+        }
+        .social-btns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .social-btns button {
+            width: 155%; /* Adjusted the width */
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #google-btn {
+            background-color: #db4437;
+        }
+        #facebook-btn {
+            background-color: #3b5998;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav id="navBar" class="navbar-white">
+            <a href="index.html">
+            <img src="images/logo-red.png" class="logo" alt="">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="house2.html">Rooms</a></li>
+                <li><a href="house3.html">Gallery</a></li>
+            </ul>
+            <a href="registration.html" class="register-btn">Sign In / Sign Up</a>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+        </nav>
+    </div>
+    <div class="container">  
+        <div class="left">
+            <div class="main">
+                <h1 style="color: #ea4039;">Sign In</h1>
+                <p>Welcome to <span style="color: #ea4039;">Staybnb</span>, your home away from home. Please sign in to access your account and manage your reservations.</p>
+                <div class="formInputs">
+                    <form action="#" method="post" id="myForm">
+                        <input type="text" placeholder="Username / Phone Number" id="user"><br>
+                        <input type="password" placeholder="Password" id="pass"><br>
+                        <span>
+                            <a href="#">Forgot Password?</a><br>
+                        </span>
+                        <button type="submit">Sign In</button><br>
+                    </form><br>
+                    <div class="divider"><span>Direct Login Using</span></div>
+                    <div class="social-btns">
+                        <button id="google-btn"><i class="fa-brands fa-google"></i> Login with Google</button>
+                        <button id="facebook-btn"><i class="fa-brands fa-facebook"></i> Login with Facebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
